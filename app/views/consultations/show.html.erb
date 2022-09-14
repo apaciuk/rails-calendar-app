@@ -1,0 +1,20 @@
+<div class="page-header">
+  <%= link_to consultations_path, class: 'btn btn-default' do %>
+    All Consultations
+  <% end %>
+  <%= link_to edit_consultation_path(@consultation), class: 'btn btn-primary' do %>
+    Edit
+  <% end %>
+  <h1>Show consultation</h1>
+</div>
+
+<dl class="dl-horizontal">
+  <dt>Title:</dt>
+  <dd><%= @consultation.title %></dd>
+  <dt>Description:</dt>
+  <dd><%= @consultation.description %></dd>
+  <dt>Start time:</dt>
+  <dd><%= @consultation.start_time %></dd>
+  <dt>End time:</dt>
+  <dd><%= @consultation.end_time %></dd>
+</dl>
